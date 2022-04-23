@@ -20,4 +20,7 @@ export class PostsComponent implements OnInit {
     })
   }
 
+  onSomeChildClick(id:number){
+      console.log("Clicked Child id:" + id)
+  }
 }

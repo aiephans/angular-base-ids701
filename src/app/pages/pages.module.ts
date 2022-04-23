@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { PostsComponent } from './posts/posts.component';
+import { PostsModule } from './posts/posts.module';
 
 
 
@@ -11,17 +11,16 @@ import { PostsComponent } from './posts/posts.component';
   declarations: [
     HomeComponent,
     AboutComponent,
-    ContactComponent,
-    PostsComponent
+    ContactComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PostsModule
   ],
   exports:[
     HomeComponent,
     AboutComponent,
-    ContactComponent,
-    PostsComponent
+    ContactComponent
   ]
 })
 export class PagesModule { }
